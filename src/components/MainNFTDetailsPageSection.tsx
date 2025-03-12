@@ -4,7 +4,6 @@ import { Copy } from 'lucide-react';
 
 const MainNFTDetailsPageSection = () => {
   const [activeTab, setActiveTab] = useState<'details' | 'bids' | 'history'>('details');
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
 
   const handleCopyAddress = () => {
     const cryptoLink = document.getElementById('cryptoLink') as HTMLInputElement;
@@ -24,7 +23,7 @@ const MainNFTDetailsPageSection = () => {
               {/* NFT Image */}
               <div className="relative">
                 <img 
-                  src="/api/placeholder/400/400" 
+                  src="/images/nft-item/item-details.gif" 
                   alt="NFT Item" 
                   className="w-full"
                 />
@@ -70,7 +69,7 @@ const MainNFTDetailsPageSection = () => {
                       <div className="flex items-center gap-4 mb-6">
                         <div className="w-12 h-12 rounded-full overflow-hidden">
                           <img 
-                            src="/api/placeholder/48/48" 
+                            src="/images/seller/02.gif" 
                             alt="Owner" 
                             className="w-full h-full object-cover"
                           />

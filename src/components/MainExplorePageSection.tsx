@@ -17,78 +17,114 @@ const MainExplorePageSection = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   // Sample NFT data
-  const nftItems: NFTItem[] = [
-    {
-      id: '1',
-      title: 'EUPHORIA de',
-      author: 'Gucci Lucas',
-      price: '0.34 ETH',
-      likes: 230,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40']
+  const nftItems: NFTItem[] = [ 
+    { 
+      id: '1', 
+      title: 'EUPHORIA de', 
+      author: 'Gucci Lucas', 
+      price: '0.34 ETH', 
+      likes: 230, 
+      image: '/images/nft-item/02.gif', 
+      authorImages: ['/images/seller/04.png'] 
+    }, 
+    { 
+      id: '2', 
+      title: 'Mewao com de', 
+      author: 'Ecalo jers', 
+      price: '0.34 ETH', 
+      likes: 278, 
+      image: '/images/nft-item/01.jpg', 
+      authorImages: ['/images/seller/01.png', '/images/seller/01.gif', '/images/seller/02.png'] 
+    }, 
+    { 
+      id: '3', 
+      title: 'pet mice rio', 
+      author: 'Hola moc', 
+      price: '0.34 ETH', 
+      likes: 340, 
+      image: '/images/nft-item/06.gif', 
+      authorImages: ['/images/seller/02.png', '/images/seller/05.png', '/images/seller/04.png'] 
+    }, 
+    { 
+      id: '4', 
+      title: 'Logical Impact', 
+      author: 'Logicto pen', 
+      price: '0.34 ETH', 
+      likes: 330, 
+      image: '/images/nft-item/04.jpg', 
+      authorImages: ['/images/seller/06.png', '/images/seller/05.gif'] 
+    }, 
+    { 
+      id: '5', 
+      title: 'Fly on high', 
+      author: 'unique lo', 
+      price: '0.34 ETH', 
+      likes: 355, 
+      image: '/images/nft-item/03.jpg', 
+      authorImages: ['/images/seller/06.png', '/images/seller/07.gif', '/images/seller/09.png'] 
+    }, 
+    { 
+      id: '6', 
+      title: 'kiara rodri de', 
+      author: 'Monica bel', 
+      price: '0.34 ETH', 
+      likes: 60, 
+      image: '/images/nft-item/04.gif', 
+      authorImages: ['/images/seller/05.gif'] 
+    }, 
+    { 
+      id: '7', 
+      title: 'EUPHORIA de', 
+      author: 'Gucci L.', 
+      price: '0.34 ETH', 
+      likes: 230, 
+      image: '/images/nft-item/05.jpg', 
+      authorImages: ['/images/seller/08.gif', '/images/seller/01.png', '/images/seller/11.png'] 
+    }, 
+    { 
+      id: '8', 
+      title: 'Homies wall', 
+      author: 'ptrax elm.', 
+      price: '0.34 ETH', 
+      likes: 930, 
+      image: '/images/nft-item/05.gif', 
+      authorImages: ['/images/seller/01.png', '/images/seller/07.png', '/images/seller/09.png'] 
     },
-    {
-      id: '2',
-      title: 'Mewao com de',
-      author: 'Ecalo jers',
-      price: '0.34 ETH',
-      likes: 278,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40', '/api/placeholder/40/40']
+    { 
+      id: '9', 
+      title: 'Logical Impact', 
+      author: 'Logicto pen', 
+      price: '0.34 ETH', 
+      likes: 330, 
+      image: '/images/nft-item/01.gif', 
+      authorImages: ['/images/seller/06.png', '/images/seller/05.gif'] 
     },
-    {
-      id: '3',
-      title: 'pet mice rio',
-      author: 'Hola moc',
-      price: '0.34 ETH',
-      likes: 340,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40', '/api/placeholder/40/40']
+    { 
+      id: '10', 
+      title: 'pet mice rio', 
+      author: 'Hola moc', 
+      price: '0.34 ETH', 
+      likes: 340, 
+      image: '/images/nft-item/06.jpg', 
+      authorImages: ['/images/seller/02.png', '/images/seller/05.png', '/images/seller/04.png'] 
     },
-    {
-      id: '4',
-      title: 'Logical Impact',
-      author: 'Logicto pen',
-      price: '0.34 ETH',
-      likes: 330,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40']
+    { 
+      id: '11', 
+      title: 'Mewao com de', 
+      author: 'Ecalo jers', 
+      price: '0.34 ETH', 
+      likes: 278, 
+      image: '/images/nft-item/03.gif', 
+      authorImages: ['/images/seller/01.png', '/images/seller/01.gif', '/images/seller/02.png'] 
     },
-    {
-      id: '5',
-      title: 'Fly on high',
-      author: 'unique lo',
-      price: '0.34 ETH',
-      likes: 355,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40', '/api/placeholder/40/40']
-    },
-    {
-      id: '6',
-      title: 'kiara rodri de',
-      author: 'Monica bel',
-      price: '0.34 ETH',
-      likes: 60,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40']
-    },
-    {
-      id: '7',
-      title: 'EUPHORIA de',
-      author: 'Gucci Lucas',
-      price: '0.34 ETH',
-      likes: 230,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40']
-    },
-    {
-      id: '8',
-      title: 'Homies wall',
-      author: 'pixtrax',
-      price: '0.34 ETH',
-      likes: 530,
-      image: '/api/placeholder/240/300',
-      authorImages: ['/api/placeholder/40/40', '/api/placeholder/40/40', '/api/placeholder/40/40']
+    { 
+      id: '12', 
+      title: 'EUPHORIA de', 
+      author: 'Gucci Lucas', 
+      price: '0.34 ETH', 
+      likes: 230, 
+      image: '/images/nft-item/08.jpg', 
+      authorImages: ['/images/seller/04.png'] 
     }
   ];
 

@@ -62,47 +62,41 @@ const MainWalletPageSection = () => {
 
   return (
     <section className="w-full py-12 bg-navy-950">
-      <div className="max-w-7xl mx-auto px-4 max-w-6xl">
-        <div className="wallet-inner">
-          <div className="wallet-title mb-8">
-            <h3 className="text-2xl font-bold text-white mb-3">Connect your wallet</h3>
-            <p className="text-gray-300">
-              Connect with one of available wallet providers or{' '}
-              <a href="signup.html" className="text-blue-400 hover:underline">
-                create a new wallet
-              </a>
+      <div className="max-w-7xl mx-auto px-4">
+        <div>
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-white mb-2">Connect your wallet</h3>
+            <p className="text-gray-300 text-sm">
+              Connect with one of available wallet 
+              providers or <a href="#" className="text-blue-500 hover:underline">create a new wallet</a>
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {walletOptions.map((wallet) => (
               <div key={wallet.id} className="wallet-item">
-                <div className="wallet-item-inner bg-navy-900 rounded-lg p-4 hover:bg-navy-800 transition-colors duration-300 h-full">
-                  <div className="wallet-thumb flex items-center justify-center mb-3">
-                    <a href="signin.html" className="flex items-center justify-center">
-                      <img 
-                        src={wallet.imageSrc} 
-                        alt={`${wallet.name} wallet`} 
-                        className="w-16 h-16 rounded-full"
-                      />
-                    </a>
+                <div className="bg-navy-900 rounded-lg p-6 hover:bg-navy-800 transition-colors duration-300 h-full">
+                  <div className="flex items-start mb-3">
+                    <img 
+                      src={wallet.imageSrc} 
+                      alt={`${wallet.name} wallet`} 
+                      className="w-12 h-12"
+                    />
                   </div>
-                  <div className="wallet-content text-center">
-                    <h5 className="text-lg font-medium text-white mb-1">
-                      <a href="signin.html" className="hover:text-blue-400 transition-colors">
-                        {wallet.name}
-                      </a>
+                  <div className="text-left">
+                    <h5 className="text-base font-medium text-white mb-1">
+                      {wallet.name}
                     </h5>
-                    <p className="text-gray-400 text-sm">{wallet.description}</p>
+                    <p className="text-gray-400 text-xs">{wallet.description}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
           
-          <p className="mt-8 mb-0 text-gray-400 flex items-center">
-            <span className="mr-2 text-blue-400">
-              <i className="icofont-bulb-alt"></i>
+          <p className="mt-8 text-sm text-gray-400 flex items-center">
+            <span className="mr-2 text-blue-500 text-lg">
+              ⓘ
             </span>
             We do not own your private keys and cannot access your funds without your confirmation.
           </p>
