@@ -17,7 +17,7 @@ interface NFTItem {
 
 const AuctionSection = () => {
   // NFT data
-  const nftItems: NFTItem[] = [
+  const nftItems = React.useMemo<NFTItem[]>(() => [
     {
       id: 1,
       title: "Walking On Air",
@@ -70,7 +70,7 @@ const AuctionSection = () => {
       ],
       endTime: new Date(Date.now() + 72 * 60 * 60 * 1000)
     },
-  ];
+  ], []);
 
   // Add countdown state and effect
   const [timeLeft, setTimeLeft] = React.useState<{[key: number]: {days: number, hours: number, minutes: number, seconds: number}}>({});

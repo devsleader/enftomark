@@ -37,7 +37,7 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`hidden lg:flex items-center space-x-6 ml-auto`}>
           <Link href="/" className="font-medium hover:text-amber-500">Home</Link>
-          <Link href="/explore" className="font-medium hover:text-amber-500">Explore NFT's</Link>
+          <Link href="/explore" className="font-medium hover:text-amber-500">Explore NFT&apos;s</Link>
           <Link href="/nft-details" className="font-medium hover:text-amber-500">NFT Details</Link>
           <Link href="/wallet-connect" className="font-medium hover:text-amber-500">Wallet Connect</Link>
           </nav>
@@ -124,7 +124,7 @@ const Header = () => {
           <div className="lg:hidden mt-4 pb-4">
             <nav className="flex flex-col space-y-4">
             <Link href="/" className="py-2 font-medium hover:text-amber-500">Home</Link>
-            <Link href="/explore" className="py-2 font-medium hover:text-amber-500">Explore NFT's</Link>
+            <Link href="/explore" className="py-2 font-medium hover:text-amber-500">Explore NFT&apos;s</Link>
             <Link href="/nft-details" className="py-2 font-medium hover:text-amber-500">NFT Details</Link>
             <Link href="/wallet-connect" className="py-2 font-medium hover:text-amber-500">Wallet Connect</Link>
             </nav>

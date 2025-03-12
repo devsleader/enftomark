@@ -144,7 +144,7 @@ const Footer = () => {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2  rounded-full mr-2 border border-yellow-500"></span>
-                      <a href="#" className="hover:text-yellow-500 transition-colors">We're Hiring</a>
+                      <a href="#" className="hover:text-yellow-500 transition-colors">We&apos;re Hiring</a>
                     </li>
                   </ul>
                 </div>
